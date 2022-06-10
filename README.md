@@ -66,15 +66,15 @@ A 8 3
 ## Задача № II.1
 ```javascript
 function joinCities(arr) {
-	return `${arr.join(',')}.`;
+  return `${arr.join(',')}.`;
 }
 
 function joinCitiesAlt(arr) {
-	let result = arr[0];
-	for (let i = 1; i < arr.length; i++) {
-		result += `,${arr[i]}`;
-	}
-	return `${result}.`
+  let result = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    result += `,${arr[i]}`;
+  }
+  return `${result}.`
 }
 ```
 > Время выполнения ~ 3 минут
@@ -82,7 +82,7 @@ function joinCitiesAlt(arr) {
 ## Задача № II.2
 ```javascript
 function round(number) {
-	return Math.round(number / 5) * 5;
+  return Math.round(number / 5) * 5;
 }
 ```
 > Время выполнения ~ 3 минут
@@ -92,12 +92,12 @@ function round(number) {
 function getGenitive(count) {
   let result = `${count} компьютеров`;
   if (count % 100 < 5 || count % 100 > 20) {
-  	if (count % 10 === 1) {
-  		result = `${count} компьютер`;
-  	}
-  	if (count % 10 > 1 && count % 10 < 5) {
-  		result = `${count} компьютера`;
-  	}
+    if (count % 10 === 1) {
+      result = `${count} компьютер`;
+    }
+    if (count % 10 > 1 && count % 10 < 5) {
+      result = `${count} компьютера`;
+    }
   }
   return result;
 }
@@ -108,9 +108,9 @@ function getGenitive(count) {
 ```javascript
 function isSimple(number) {
   for (let i = 2; i < number; i++) {
-  	if (number % i === 0) {
-  	  return `Число ${number} - составное`;
-  	}
+    if (number % i === 0) {
+      return `Число ${number} - составное`;
+    }
   }
   return `Число ${number} - простое`;
 }
